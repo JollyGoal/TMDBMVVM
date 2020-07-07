@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="largeText">18sp</dimen>
+    <dimen name="bigText">14sp</dimen>
+    <dimen name="normalText">12sp</dimen>
+    <dimen name="normalTopMargin">15dp</dimen>
+    <dimen name="smallTopMargin">2dp</dimen>
+    <dimen name="smallMarginStart">4sp</dimen>
+</resources>

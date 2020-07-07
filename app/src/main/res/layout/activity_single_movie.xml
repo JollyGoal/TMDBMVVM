@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".single_movie_details.SingleMovieActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/single_movie_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/single_movie_error_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/connection_problem"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_movie_poster"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_gravity="center"
+                    android:scaleType="matrix"
+                    android:src="@drawable/ic_poster_placeholder" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/single_movie_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/largeText"
+                        android:textStyle="bold"
+                        tools:text="Movie" />
+
+                    <TextView
+                        android:id="@+id/single_movie_tagline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/normalText"
+                        android:textStyle="bold"
+                        tools:text="Tagline" />
+
+                    <TextView
+                        android:layout_marginTop="@dimen/normalTopMargin"
+                        android:text="@string/movie_info"
+                        style="@style/single_movie_info_header" />
+
+                    <LinearLayout style="@style/single_movie_meta_layout">
+
+                        <TextView
+                            android:text="@string/release_date"
+                            style="@style/single_movie_meta_header" />
+
+                        <TextView
+                            android:id="@+id/single_movie_release_date"
+                            tools:text="2019"
+                            style="@style/single_movie_meta_info" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/single_movie_meta_layout">
+
+                        <TextView
+                            android:text="@string/rating"
+                            style="@style/single_movie_meta_header" />
+
+                        <TextView
+                            android:id="@+id/single_movie_rating"
+                            tools:text="8"
+                            style="@style/single_movie_meta_info" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/single_movie_meta_layout">
+
+                        <TextView
+                            android:text="@string/runtime"
+                            style="@style/single_movie_meta_header" />
+
+                        <TextView
+                            android:id="@+id/single_movie_runtime"
+                            tools:text="2h 30min"
+                            style="@style/single_movie_meta_info" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/single_movie_meta_layout">
+
+                        <TextView
+                            android:text="@string/budget"
+                            style="@style/single_movie_meta_header" />
+
+                        <TextView
+                            android:id="@+id/single_movie_budget"
+                            tools:text="1 300 000 USD"
+                            style="@style/single_movie_meta_info" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/single_movie_meta_layout">
+
+                        <TextView
+                            android:text="@string/revenue"
+                            style="@style/single_movie_meta_header" />
+
+                        <TextView
+                            android:id="@+id/single_movie_revenue"
+                            tools:text="1 400 000 USD"
+                            style="@style/single_movie_meta_info" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:text="@string/overview"
+                        style="@style/single_movie_meta_header" />
+
+                    <TextView
+                        android:id="@+id/single_movie_overview"
+                        tools:text="overview.........."
+                        style="@style/single_movie_meta_info" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
