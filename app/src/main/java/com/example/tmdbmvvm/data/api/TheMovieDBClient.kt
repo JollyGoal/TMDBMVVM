@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit
 const val API_KEY = "dbe6bbade89a0d98b04e6de2f6a50c10"
 const val BASE_URL = "https://api.themoviedb.org/3/"
 
-const val POSTER_BASE_URL = "https://image.thmdb.org/t/p/w342"
+const val POSTER_BASE_URL = "https://image.tmdb.org/t/p/original"
 
 // https://api.themoviedb.org/3/movie/popular?api_key=dbe6bbade89a0d98b04e6de2f6a50c10&language=en-US&page=1
 // https://api.themoviedb.org/3/movie/299534?api_key=dbe6bbade89a0d98b04e6de2f6a50c10

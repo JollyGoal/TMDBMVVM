@@ -8,4 +8,5 @@
     <string name="budget">Budget:</string>
     <string name="revenue">Revenue:</string>
     <string name="overview">Overview:</string>
+    <string name="single_movie_poster">Single Movie Poster</string>
 </resources>
