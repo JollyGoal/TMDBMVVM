@@ -20,7 +20,7 @@ import kotlinx.android.synthetic.main.network_state_item.view.*
 class PopularMoviePagedListAdapter(private val context: Context) :
     PagedListAdapter<Movie, RecyclerView.ViewHolder>(MovieDiffCallback()) {
 
-    private val MOVIE_VIEW_TYPE = 1
+    val MOVIE_VIEW_TYPE = 1
     private val NETWORK_VIEW_TYPE = 2
 
     private var networkState: NetworkState? = null
